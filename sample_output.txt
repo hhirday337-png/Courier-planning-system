@@ -1,0 +1,38 @@
+================================================================
+              COURIER PLANNING SYSTEM
+              Hirday | Roll No. 2501060202
+================================================================
+
+1. PARCEL PRIORITIZATION (Merge Sort)
+ID   Destination   Weight   Value   Priority   Deadline
+P02  B            8        100     5          2026-11-23
+P05  E            7        90      5          2026-11-23
+P03  C            6        80      4          2026-11-25
+P01  A            5        60      3          2026-11-24
+P06  F            9        110     3          2026-11-26
+P04  D            4        50      2          2026-11-24
+
+2. VEHICLE LOADING (0/1 Knapsack)
+Capacity: 25 kg
+Selected parcels: P02, P05, P03, P04
+Total weight: 25 kg
+Total delivery value: 320
+
+3. SHORTEST PATHS (Dijkstra)
+Warehouse -> A: 4 km (Warehouse -> A)
+Warehouse -> B: 6 km (Warehouse -> B)
+Warehouse -> C: 8 km (Warehouse -> C)
+Warehouse -> D: 9 km (Warehouse -> A -> D)
+Warehouse -> E: 10 km (Warehouse -> C -> E)
+Warehouse -> F: 12 km (Warehouse -> C -> E -> F)
+
+4. DELIVERY ROUTE (Nearest Neighbour + Dijkstra)
+Warehouse -> B -> C -> E -> D -> Warehouse
+Approximate round-trip distance: 23 km
+
+5. BASIC PERFORMANCE MEASUREMENTS
+Merge Sort runtime: 0.00001353 seconds
+Knapsack DP runtime: 0.00005102 seconds
+Note: timings depend on computer and dataset size.
+
+System completed successfully.
